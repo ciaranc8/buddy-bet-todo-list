@@ -32,3 +32,4 @@ C:\Users\User\OneDrive\Desktop\ToDoListApp\todo-list.api\todo-list.api\obj\Debug
 C:\Users\User\OneDrive\Desktop\ToDoListApp\todo-list.api\todo-list.api\obj\Debug\net9.0\todo-list.api.pdb
 C:\Users\User\OneDrive\Desktop\ToDoListApp\todo-list.api\todo-list.api\obj\Debug\net9.0\todo-list.api.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\ToDoListApp\todo-list.api\todo-list.api\obj\Debug\net9.0\ref\todo-list.api.dll
+C:\Users\User\OneDrive\Desktop\ToDoListApp\todo-list.api\todo-list.api\obj\Debug\net9.0\todo-list.api.sourcelink.json

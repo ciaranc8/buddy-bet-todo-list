@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.todo-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.input-container {
+    display: flex; 
+    margin-bottom: 20px; 
+}
+
+.todo-input {
+    flex-grow: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin-right: 10px; 
+}
+
+.add-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.add-button:hover {
+    background-color: #45a049; 
+}
+
+.todo-list {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.todo-list li {
+    margin: 15px 0; 
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+}
+
+.todo-checkbox {
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    margin-right: 10px;
+    cursor: pointer; 
+    position: relative; 
+}
+
+.todo-checkbox:checked {
+    background-color: #4CAF50; 
+    border: 2px solid #4CAF50; 
+}
+
+.todo-checkbox:checked::after {
+    content: '';
+    position: absolute; 
+    left: 5px; 
+    top: 2px; 
+    width: 5px; 
+    height: 10px; 
+    border: solid white; 
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg); 
+}
+
+.todo-text {
+    cursor: pointer; 
+    display: inline-block; 
+    flex-grow: 1; 
+    padding: 10px 0; 
+}
+
+.delete-button {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+} 
+
+.todo-checkbox:checked + .todo-text {
+    text-decoration: line-through; 
+    color: #999; 
+}
