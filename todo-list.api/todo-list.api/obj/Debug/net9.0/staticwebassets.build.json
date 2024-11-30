@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vf8fuRjnTi4+E/vehXiLIZtFuGpDO/tRZiTfXJpckc8=",
+  "Source": "todo-list.api",
+  "BasePath": "_content/todo-list.api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
