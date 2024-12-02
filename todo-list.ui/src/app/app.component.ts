@@ -36,17 +36,14 @@ export class AppComponent {
   }
 
   deleteTodo(id: number): void {
-    this.appService.deleteTodoItem(id).subscribe(() => {
-      this.todos = this.todos.filter(todo => todo.id !== id);
+    this.appService.deleteTodoItem(id).subscribe((updatedTodos:any) => {
+      this.todos = updatedTodos;
     });
   }
 
   updateIsComplete(id: number, isComplete: boolean): void {
-    this.appService.updateTodoItemIsComplete(id, isComplete).subscribe(() => {
-      const todo = this.todos.find(t => t.id === id);
-      if (todo) {
-        todo.isComplete = isComplete;
-      }
+    this.appService.updateTodoItemIsComplete(id, isComplete).subscribe((updatedTodos:any) => {
+      this.todos = updatedTodos;
     });
   }
   

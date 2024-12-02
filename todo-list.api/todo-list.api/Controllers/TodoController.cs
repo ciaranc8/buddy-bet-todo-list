@@ -35,7 +35,7 @@ namespace todo_list.api.Controllers
                 return NotFound();
             }
             todos.Remove(todo);
-            return NoContent();
+            return Ok(todos);
         }
 
         [HttpPut("{id}/isComplete")]
@@ -47,7 +47,7 @@ namespace todo_list.api.Controllers
                 return NotFound();
             }
             todo.IsComplete = isComplete;
-            return NoContent();
+            return Ok(todos);
         }
     }
 }
